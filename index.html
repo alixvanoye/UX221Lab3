@@ -30,6 +30,23 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <style id='wp-block-post-title-inline-css'>
 .wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
 </style>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+</style>
+<style id='wp-block-list-inline-css'>
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+
+				ul.is-style-checkmark-list {
+					list-style-type: "\2713";
+				}
+
+				ul.is-style-checkmark-list li {
+					padding-inline-start: 1ch;
+				}
+</style>
 <style id='wp-block-post-content-inline-css'>
 .wp-block-post-content{display:flow-root}
 </style>
@@ -47,9 +64,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </style>
 <style id='wp-block-navigation-link-inline-css'>
 .wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
-</style>
-<style id='wp-block-paragraph-inline-css'>
-.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
 </style>
 <style id='wp-emoji-styles-inline-css'>
 
@@ -80,6 +94,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 :root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-list li){margin-top: 0.5rem;}
 </style>
 <style id='core-block-supports-inline-css'>
 .wp-container-core-navigation-is-layout-1{justify-content:flex-end;}.wp-container-core-group-is-layout-1{flex-wrap:nowrap;gap:var(--wp--preset--spacing--10);justify-content:flex-end;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-navigation-is-layout-2{flex-direction:column;align-items:flex-start;}.wp-container-core-navigation-is-layout-3{flex-direction:column;align-items:flex-start;}.wp-container-core-group-is-layout-7{gap:var(--wp--preset--spacing--80);justify-content:space-between;align-items:flex-start;}.wp-container-core-group-is-layout-8{justify-content:space-between;align-items:flex-start;}.wp-container-core-group-is-layout-9{gap:var(--wp--preset--spacing--20);justify-content:space-between;}
@@ -191,7 +206,79 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 		
 		<h1 class="wp-block-post-title">My Angle</h1>
-		
+		<div class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<p>Physical exercise is something I’ve really gotten into as a hobby. Whether it’s hitting the trails for a run, dancing, or lifting weights at the gym, I find it incredibly rewarding. This hobby has taught me a lot about dedication and perseverance, and it always gives me a great energy boost that powers me through my day.</p>
+
+
+
+<p>I’m also big on mindful meditation. Taking time to sit quietly and focus my thoughts has been a game changer. It helps me manage stress, enhances my focus, and keeps me grounded. I love the sense of peace and balance it brings to my life, especially when things get stressful.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Kit to Promote My Hobbies and Lifes</strong></h2>
+
+
+
+<p>Physical exercise and mindful practices are integral parts of my daily routine, and I’m passionate about sharing these benefits with others. I have created a kit that is designed for individuals healthier lifestyle.</p>
+
+
+
+<p>The kit features the following:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Benefits of a Regular Exercise Routine</strong>: This guide introduces you to the health perks of staying active.</li>
+
+
+
+<li><strong>Beginner’s Full-Body Workout</strong>: A simple routine to get you moving and feeling good.</li>
+
+
+
+<li><strong>The Importance of Incorporating Stretching into Your Workout Routine</strong>: Learn how to stretch properly to keep flexible and avoid injuries.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Meditation for Beginners</strong>: Tips to help you start meditating and reduce stress.</li>
+
+
+
+<li><strong>The Wellness Benefits of Yoga</strong>: Insights on how yoga can improve your mental health, plus some pointers for beginners.</li>
+</ul>
+
+
+
+<p>This kit is for anyone looking to improve their health but unsure where to start or overwhelmed by the wealth of information out there.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Google Trends Search Terms Used</strong></h2>
+
+
+
+<ul class="wp-block-list">
+<li>“benefits of regular exercise”</li>
+
+
+
+<li>“beginner full body workout”</li>
+
+
+
+<li>“importance of stretching”</li>
+
+
+
+<li>“meditation for beginners”</li>
+
+
+
+<li>“wellness benefits of yoga</li>
+</ul>
+</div>
 	</div>
 	
 </main>
